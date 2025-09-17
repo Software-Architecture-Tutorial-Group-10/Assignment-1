@@ -1,10 +1,23 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class brandBLock implements Lock{
 
     private int batteryUsage;
 
     @Override
     public void  setBatteryUsageFromFile(String file){
-        this.batteryUsage = 81; // Will get from file later
+        try {
+            Scanner scanner = new Scanner(new File(file));
+            if (scanner.hasNextInt()) {
+                this.batteryUsage = scanner.nextInt();
+            }
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + file);
+            this.batteryUsage = -1;
+        }
     }
 
     @Override

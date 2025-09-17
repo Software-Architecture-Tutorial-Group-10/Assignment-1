@@ -6,22 +6,22 @@ public class Main {
 
         smartDeviceFactory factoryA = new brandAFactory();
         Bulb bulbA = factoryA.createBulb();
-        bulbA.setPowerUsageFromFile("data.txt");
+        bulbA.setPowerUsageFromFile("dataFiles/brandA_bulb.txt");
         bulbA.displayInfo();
 
         Lock lockA = factoryA.createLock();
-        lockA.setBatteryUsageFromFile("data.txt");
+        lockA.setBatteryUsageFromFile("dataFiles/brandA_lock.txt");
         lockA.displayInfo();
 
         System.out.println("\n---Brand B---");
 
         smartDeviceFactory factoryB = new brandBFactory();
         Bulb bulbB = factoryB.createBulb();
-        bulbB.setPowerUsageFromFile("data.txt");
+        bulbB.setPowerUsageFromFile("dataFiles/brandB_bulb.txt");
         bulbB.displayInfo();
 
         Lock lockB = factoryB.createLock();
-        lockB.setBatteryUsageFromFile("data.txt");
+        lockB.setBatteryUsageFromFile("dataFiles/brandB_lock.txt");
         lockB.displayInfo();
 
 
