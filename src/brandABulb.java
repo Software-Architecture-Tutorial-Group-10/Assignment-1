@@ -8,7 +8,7 @@ public class brandABulb implements Bulb{
 
     @Override
     public void displayInfo(){
-        System.out.println("Brand A Bulb, Power Usage: "+ powerUsage+"W");
+        System.out.println("Power Usage: "+ powerUsage+"W");
     }
 
 }

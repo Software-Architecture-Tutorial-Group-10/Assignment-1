@@ -1,4 +1,4 @@
 public interface Lock {
-    void setBatteryUsageFromFile();
+    void setBatteryUsageFromFile(String file);
     void displayInfo();
 }

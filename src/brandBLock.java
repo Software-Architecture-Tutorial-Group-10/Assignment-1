@@ -3,13 +3,13 @@ public class brandBLock implements Lock{
     private int batteryUsage;
 
     @Override
-    public void  setBatteryUsageFromFile(){
-        this.batteryUsage = 73; // Will get from file later
+    public void  setBatteryUsageFromFile(String file){
+        this.batteryUsage = 81; // Will get from file later
     }
 
     @Override
     public void displayInfo(){
-        System.out.println("Brand Lock B battery usage: "+batteryUsage+"%");
+        System.out.println("Battery Usage: "+batteryUsage+"%");
     }
 
 
