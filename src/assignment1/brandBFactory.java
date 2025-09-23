@@ -1,4 +1,6 @@
-public class brandBFactory implements smartDeviceFactory{
+package assignment1;
+
+public class brandBFactory implements smartDeviceFactory {
 
     @Override
     public Bulb createBulb(){

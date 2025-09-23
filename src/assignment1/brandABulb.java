@@ -1,28 +1,33 @@
+package assignment1;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class brandBLock implements Lock{
-
-    private int batteryUsage;
+public class brandABulb implements Bulb {
+    private int powerUsage;
 
     @Override
-    public void  setBatteryUsageFromFile(String file){
+    public void setPowerUsageFromFile(String file){
         try {
             Scanner scanner = new Scanner(new File(file));
             if (scanner.hasNextInt()) {
-                this.batteryUsage = scanner.nextInt();
+                this.powerUsage = scanner.nextInt();
             }
             scanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("File not found: " + file);
-            this.batteryUsage = -1;
+            this.powerUsage = -1;
         }
     }
 
     @Override
     public void displayInfo(){
-        System.out.println("Battery Usage: "+batteryUsage+"%");
+        System.out.println("Power Usage: "+ powerUsage+"W");
+    }
+
+    public int getPowerUsage() {
+        return powerUsage;
     }
 
 
