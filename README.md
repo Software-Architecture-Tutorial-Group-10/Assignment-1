@@ -5,4 +5,4 @@
 -`dataFiles`: Contains all the data files for each factories bulbs and locks
 
 ## UML Diagram
-![UML.png](UML.png)
+![Assignment_1_UML.png](Assignment_1.drawio.png)
