@@ -25,7 +25,8 @@
 Assignment-1/
 │
 ├── README.md                  # Project documentation
-├── UML.png                    # UML diagram for the project
+├── Assignment_1_UML.png       # UML diagram for the project
+|── Output.png                 # Image of the output
 ├── dataFiles/                 # Input files for bulbs and locks
 │   ├── brandA_bulb.txt
 │   ├── brandA_lock.txt
