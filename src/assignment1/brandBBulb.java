@@ -1,11 +1,12 @@
+package assignment1;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class brandABulb implements Bulb{
+public class brandBBulb implements Bulb {
     private int powerUsage;
 
-    @Override
     public void setPowerUsageFromFile(String file){
         try {
             Scanner scanner = new Scanner(new File(file));
@@ -19,9 +20,13 @@ public class brandABulb implements Bulb{
         }
     }
 
-    @Override
     public void displayInfo(){
         System.out.println("Power Usage: "+ powerUsage+"W");
     }
+
+    public int getPowerUsage() {
+        return powerUsage;
+    }
+
 
 }

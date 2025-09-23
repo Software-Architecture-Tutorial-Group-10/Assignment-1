@@ -1,8 +1,11 @@
+package assignment1;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class brandALock implements Lock{
+public class brandBLock implements Lock {
+
     private int batteryUsage;
 
     @Override
@@ -23,5 +26,11 @@ public class brandALock implements Lock{
     public void displayInfo(){
         System.out.println("Battery Usage: "+batteryUsage+"%");
     }
+
+    public int getBatteryUsage() {
+        return batteryUsage;
+    }
+
+
 
 }
